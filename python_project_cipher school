@@ -1,0 +1,32 @@
+# Python Code to check if a number is
+# Positive, Negative, Odd, Even, Zero
+# Using if...elif...else
+# Python Code to check if a number is
+# Positive, Negative, Odd, Even, Zero
+# Using Nested if
+import random
+num = int(input("Enter Number"))
+count=0
+x=str(num)
+if x.startswith("-"):
+    print(num,"is a Negative number")
+elif x == "0":
+    print(num,"is Zero")
+else:
+    print(num,"is a Positive number")
+ 
+# Checking for odd and even
+if (num % 2) == 0:
+    print("{0} is an number".format(num))
+else:
+    print("{0} is an Odd number".format(num))
+    
+#checking for prime or composite
+for i in range(1, num+1):
+    if(num % i == 0):
+        count += 1;
+
+if(count > 2):
+    print("%d is a composite number" % num)
+else:
+    print("%d is a prime number" % num)
